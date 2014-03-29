@@ -23,9 +23,9 @@ Takes a parameter object.
 
 Returns an `optcheck` object to operate on the parameter object passed in.
 
-### `.requires([])`
+### `.requires()`
 
-Checks the parameter object for properties in `array`.
+Checks the parameter object for properties.
 
 Returns `this`.
 
