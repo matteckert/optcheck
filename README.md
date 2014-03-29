@@ -11,7 +11,7 @@ optcheck(args)
         async: true,
         url: 'http://localhost'
     })
-    .requires(['type', 'url']);
+    .requires('type', 'url');
 args.should.eql({async: false, type: 'json', url: 'http://localhost'});
 ```
 

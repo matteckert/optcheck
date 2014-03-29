@@ -31,6 +31,10 @@ describe('optcheck', function() {
         optcheck(options).requires(['a']).should.eql(optcheck(options));
         options.should.eql({a: '1', b: '2', c: '3'});
     });
+
+    it('allows multiple requirement arguments', function() {
+        optcheck(options).requires.bind(null, 'a', 'b', 'd').should.throw(/d/);
+    });
     
     it('readme', function() {
         var args = {async: false, type: 'json'};
@@ -39,7 +43,7 @@ describe('optcheck', function() {
                 async: true,
                 url: 'http://localhost'
             })
-            .requires(['type', 'url']);
+            .requires('type', 'url');
         args.should.eql({async: false, type: 'json', url: 'http://localhost'});
     });
 });
