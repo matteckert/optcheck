@@ -1,6 +1,6 @@
 {
   "name": "optcheck",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Checks requirements for and adds defaults to parameter objects ",
   "main": "lib/optcheck.js",
   "directories": {
